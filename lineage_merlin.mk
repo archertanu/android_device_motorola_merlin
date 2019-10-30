@@ -42,7 +42,7 @@ PRODUCT_RELEASE_NAME := merlin
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=merlin \
     TARGET_DEVICE="merlin"
-    PRIVATE_BUILD_DESC= "lineage_merlin-userdebug 7.1.2 NJH47F edb9481746 release-keys"
+    PRIVATE_BUILD_DESC= "merlin_retasia-user 6.0.1 MPDS24.107-56-1-28 42 release-keys"
 
 #Device Fingerprint Overrides
-BUILD_FINGERPRINT := "Motorola/lineage_merlin/merlin:7.1.2/NJH47F/edb9481746:userdebug/release-keys"
+BUILD_FINGERPRINT := "motorola/merlin_retasia/merlin:6.0.1/MPDS24.107-56-1-28/42:user/release-keys"
