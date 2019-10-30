@@ -42,6 +42,9 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# System Properties
+$(call inherit-product, device/motorola/merlin/system_prop.mk)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc

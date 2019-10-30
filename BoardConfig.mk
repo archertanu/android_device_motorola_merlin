@@ -51,8 +51,6 @@ endif
 endif
 
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Sensors
 BOARD_USES_STML0XX_SENSOR_HUB := true
