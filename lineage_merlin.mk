@@ -13,7 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from merlin device
 $(call inherit-product, device/motorola/merlin/full_merlin.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
@@ -28,7 +38,9 @@ PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := merlin
 
+#Device Description Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC= "lineage_merlin-userdebug 7.1.2 NJH47F edb9481746 release-keys"
 
+#Device Fingerprint Overrides
 BUILD_FINGERPRINT := "Motorola/lineage_merlin/merlin:7.1.2/NJH47F/edb9481746:userdebug/release-keys"
