@@ -40,6 +40,8 @@ PRODUCT_RELEASE_NAME := merlin
 
 #Device Description Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=merlin \
+    TARGET_DEVICE="merlin"
     PRIVATE_BUILD_DESC= "lineage_merlin-userdebug 7.1.2 NJH47F edb9481746 release-keys"
 
 #Device Fingerprint Overrides
