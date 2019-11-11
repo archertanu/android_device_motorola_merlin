@@ -149,6 +149,14 @@ on property:sys.boot_completed=1
     # enable thermal core_control
     write /sys/module/msm_thermal/core_control/enabled 1
 
+# Enable msm_irqbalance
+service vendor.msm_irqbalance /system/vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+    class core
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
+
+
 # configure properties for XT1556
 on property:ro.boot.hardware.sku=XT1556
     setprop ro.mot.build.customerid "retail"
