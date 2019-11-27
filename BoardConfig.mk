@@ -20,6 +20,10 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/merlin
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_merlin
+TARGET_RECOVERY_DEVICE_MODULES := libinit_merlin
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := merlin
 
