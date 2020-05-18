@@ -45,4 +45,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="merlin_retasia-user 6.0.1 MPDS24.107-56-1-28 42 release-keys"
 
 #Device Fingerprint Overrides
-BUILD_FINGERPRINT := "motorola/merlin_retasia/merlin:6.0.1/MPDS24.107-56-1-28/42:user/release-keys"
+BUILD_FINGERPRINT := "motorola/merlin_retasia/merlin:6.0/MPD24.65-22/23:user/release-keys"
